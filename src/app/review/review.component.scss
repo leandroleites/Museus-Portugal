@@ -1,0 +1,77 @@
+.review-section {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .review-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-group textarea {
+    height: 120px; /* Aumenta a altura da textarea */
+  }
+  
+  .reviews-display {
+    margin: 40px auto;
+    margin-bottom: 60px;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .reviews-display h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .review-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .review-item h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .review-item p {
+    font-size: 16px;
+    margin: 5px 0 0;
+  }
+
+  .btn-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #61380B;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #4e2d07;
+  }
+  

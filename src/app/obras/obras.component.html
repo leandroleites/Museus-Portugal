@@ -1,0 +1,45 @@
+<app-header></app-header>
+
+<div class="event-container">
+    <h1 class="event-title">Obras - Museus e Monumentos de Portugal</h1>
+    <p class="event-description">
+        Bem-vindo à coleção de obras dos museus de Portugal! Navegue por uma seleção diversificada e rica de arte e património cultural que reflete a história, a cultura e a criatividade deste país fascinante. 
+        <br><br>Das magníficas pinturas e esculturas aos artefactos históricos preciosos, cada obra conta uma história única e oferece uma visão profunda da rica herança de Portugal. Explore esta coleção e mergulhe na beleza e na diversidade das criações artísticas que moldaram e continuam a enriquecer a nossa cultura.
+    </p>
+<br><br>
+    <div class="filters">
+        <div class="filter-group">
+            <label for="museus">MUSEUS:</label>
+            <select id="museus" [(ngModel)]="selectedMuseu">
+                <option value="todos">Todos</option>
+                <option *ngFor="let museu of museus" [value]="museu.argumento">{{ museu.nome }}</option>
+            </select>
+        </div>
+      
+        <div class="filter-group">
+            <label for="categorias">CATEGORIAS:</label>
+            <select id="categorias" [(ngModel)]="selectedCategoria">
+                <option value="todos">Todos</option>
+                <option *ngFor="let categoria of categorias" [value]="categoria.argumento">{{ categoria.nome }}</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="obras-container">
+    <div class="obras-grid">
+        <div class="obra" *ngFor="let obra of filtrarObras(); let i = index">
+            <div class="obra-image">
+                <img [src]="obra.imageUrl" alt="Imagem da obra">
+            </div>
+            <div class="obra-details">
+                <h3>{{ obra.title }}</h3>
+                <p>Autor: {{ obra.author }}</p>
+                <p>Data: {{ obra.date }}</p>
+                <br><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

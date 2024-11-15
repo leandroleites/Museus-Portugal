@@ -1,0 +1,88 @@
+<app-header></app-header>
+<div class="hero-image">
+  <img src="assets/main_duques.jpeg">
+</div>
+<div class="text-content">
+  <p>Todos os dias, das 10h00 às 18h00 · Bilhete 5,00 €</p>
+  <hr class="separator-line">
+</div>  
+
+<div class="content-section">
+  <h1>Paço dos Duques</h1>
+  <p>
+    O Paço dos Duques de Bragança, situado na cidade de Guimarães, é um magnífico exemplar da arquitetura senhorial quatrocentista e berço da Casa de Bragança. Está classificado como Monumento Nacional desde 1910 e engloba na sua estrutura uma ala destinada a residência oficial da Presidência da República.
+  </p>
+  <p>
+    Datado do século XV, foi edificado por D. Afonso, filho bastardo do rei D. João I e de D. Inês Pires Esteves, 1.º Duque da Casa de Bragança e 8.º Conde de Barcelos, por altura do seu segundo casamento com D. Constança de Noronha. Habitado durante o século XV, assistiu-se nas centúrias seguintes a um progressivo abandono e consequente ruína, motivada por fatores políticos e económicos, que se foi agravando até ao século XX.
+  </p>
+  <p>
+    Entre 1937 e 1959, realizou-se uma ampla e complexa intervenção de reconstrução, executada a partir de um projeto do arquiteto Rogério de Azevedo. Em 1959, é inaugurado como Palácio Nacional e aberto ao público como museu.
+  </p>
+  <p>
+    Atualmente, as peças expostas, produzidas principalmente nos séculos XVII e XVIII, “mobilam” os diversos espaços da exposição permanente, criando no visitante a ideia de que está a visitar uma “casa”. Do seu espólio constam excelentes coleções de tapeçaria, porcelana, pintura, mobiliário, escultura e armas, para além de uma ou outra peça evocativa de outras artes.
+  </p>
+</div>
+<div class="gallery">
+  <a href="assets/pdd1.jpeg"> 
+    <img src="assets/pdd1.jpeg">
+  </a>
+  <a href="assets/pdd2.jpeg">
+    <img src="assets/pdd2.jpeg">
+  </a>
+  <a href="assets/pdd3.jpeg">
+    <img src="assets/pdd3.jpeg">
+  </a>
+  <a href="assets/pdd4.jpeg">
+    <img src="assets/pdd4.jpeg">
+  </a>
+  <a href="assets/main_duques.jpeg">
+    <img src="assets/main_duques.jpeg">
+  </a>
+  <a href="assets/paco_duques.jpeg">
+    <img src="assets/paco_duques.jpeg">
+  </a>
+  <a href="assets/pdd5.jpeg">
+    <img src="assets/pdd5.jpeg">
+  </a>
+  <a href="assets/pdd6.jpeg">
+    <img src="assets/pdd6.jpeg">
+  </a>
+</div>
+<div class="info-section">
+  <div class="info-block">
+    <h2>Diretor/a</h2>
+    <p>Flávio Vieira</p>
+  </div>
+  <div class="info-block">
+    <h2>Morada e contactos</h2>
+    <p>Rua Conde Dom Henrique · 4800-412 Guimarães</p>
+    <p><strong>T</strong> +351 253 412 273</p>
+    <p><strong>E-mail:</strong> pduques&#64;museusemonumentos.pt</p>
+    <p><strong>Site:</strong> pacodosduques.gov.pt</p>
+  </div>
+  <div class="info-block">
+    <h2>Horário</h2>
+    <p>Segunda-feira a domingo <strong>10h00-18h00</strong></p>
+    <p>Encerrado: 1 de janeiro, domingo de Páscoa, 1 de maio, 25 de dezembro</p>
+  </div>
+  <div class="info-block">
+    <h2>Bilheteira</h2>
+    <p>Normal <strong>5,00 €</strong></p>
+    <p><a href="https://pacodosduques.gov.pt/planear-visita/bilhetica-horarios/">Bilheteira online</a></p>
+  </div>
+  <div class="info-block">
+    <h2>Eventos</h2>
+    <a routerLink="/camila">
+      <img src="assets/camila.jpg" class="event-image">
+    </a>
+    </div>
+  <br>
+  <div class="info-block">
+    <h2>Localização</h2>
+  </div>
+</div>
+<div class="map-container">
+  <iframe class="map-container" iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.645923133565!2d-8.29369782355785!3d41.44690394230073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24e598bfae9dab%3A0x5cc6b66a8b587c6c!2sPa%C3%A7o%20dos%20Duques%20de%20Bragan%C3%A7a!5e0!3m2!1spt-PT!2spt!4v1717775186185!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+</div>
+<app-review [museum]="'duques'"></app-review>
+<app-footer></app-footer>

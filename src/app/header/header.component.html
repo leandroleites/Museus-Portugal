@@ -1,0 +1,48 @@
+<header class="header" id="header">
+  <nav class="nav container">
+    <a routerLink="/home" class="nav__logo">
+      <img src="assets/logo1.png" class="nav__logo-img">
+    </a>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a routerLink="/museus" class="nav__link">Museus</a>
+        </li>
+        <li class="nav__item">
+          <a routerLink="/obras" class="nav__link">Obras</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav__actions">
+      <i *ngIf="!isLoggedIn" class="ri-user-line nav__login" id="login-btn"></i>
+      <a *ngIf="isLoggedIn" routerLink="/cliente" class="nav__email">{{ loggedInName }}</a>
+      <button *ngIf="isLoggedIn" class="logout-button" (click)="onLogout()">Logout</button>
+    </div>
+  </nav>
+</header>
+
+<!--==================== LOGIN ====================-->
+
+<div *ngIf="!isLoggedIn" class="login" id="login">
+  <form (ngSubmit)="onSubmitLogin()" class="login__form">
+    <h2 class="login__title">Iniciar Sessão</h2>
+    <div class="login__group">
+      <div>
+        <label for="email" class="login__label">Email</label>
+        <input type="email" [(ngModel)]="email" name="email" placeholder="Insira o seu email." id="email" class="login__input">
+      </div>
+      <div>
+        <label for="password" class="login__label">Password</label>
+        <input type="password" [(ngModel)]="password" name="password" placeholder="Insira a sua password" id="password" class="login__input">
+      </div>
+    </div>
+    <div>
+      <p class="login__signup">
+        Não tem conta? Registe-se <a routerLink="/register">Criar conta</a>
+      </p>
+      <br>
+      <button type="submit" class="login__button">Entrar</button>
+    </div>
+  </form>
+  <i class="ri-close-line login__close" id="login-close"></i>
+</div>

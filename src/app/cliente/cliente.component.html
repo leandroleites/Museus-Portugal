@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="profile-section">
+    <br>
+    <br>
+    <h2>Informações Perfil</h2>
+    <form>
+        <div class="input-group">
+          <label for="firstName">Nome:</label>
+          <input type="text" id="firstName" [(ngModel)]="user.name" name="name" readonly>
+        </div>
+        <div class="input-group">
+          <label for="lastName">Apelido:</label>
+          <input type="text" id="lastName" [(ngModel)]="user.surname" name="surname" readonly>
+        </div>
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" [(ngModel)]="user.email" name="email" required readonly>
+        </div>
+        <div class="input-group">
+          <label for="birthDate">Data de Nascimento:</label>
+          <input type="date" id="birthDate" [(ngModel)]="user.dob" name="dob" readonly>
+        </div>
+        <div class="input-group">
+            <label for="gender">Género:</label>
+            <input type="text" id="gender" [(ngModel)]="user.gender" name="gender" readonly>
+          </div>
+      </form>
+      <br>
+      <br>
+      <h2>Avaliações</h2>
+      <div class="reviews-display">
+        <div *ngFor="let review of reviews" class="review-item">
+          <h3>{{ review.name }} ({{ review.value }}/5) - {{ review.name_m }}</h3>
+          <p>{{ review.comment }}</p>
+        </div>
+      </div>
+  </div>
+  <app-footer></app-footer>
+  

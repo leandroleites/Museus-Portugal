@@ -1,0 +1,57 @@
+.obras-container {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.obras-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px; /* Define uma largura máxima para a grade */
+    margin: 0 auto; /* Centraliza a grade horizontalmente */
+    margin-bottom: 100px;
+}
+
+.obra {
+    width: calc(33.33% - 10px); /* Ajusta para exibir três obras por linha */
+    margin: 5px; /* Espaçamento entre as obras */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.obra-image img {
+    width: 100%; /* Faz com que as imagens ocupem toda a largura da célula */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 5px; /* Espaçamento abaixo de cada imagem */
+}
+
+.obra-details {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    margin-right: 20px;
+}
+
+.filter-group label {
+    font-weight: bold;
+}
+
+.filter-group select {
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+

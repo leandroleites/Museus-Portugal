@@ -1,0 +1,168 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #00000015;
+  backdrop-filter: blur(24px);
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  box-shadow: 0 8px 32px #0b0b3b2a;
+  border-radius: 1rem;
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  color: #61380B; /* Cor para combinar com o formulário de login */
+}
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: var(--title-color);
+}
+
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #61380B; /* Cor para combinar com o formulário de login */
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #61380B; /* Cor para combinar com o formulário de login */
+}
+
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #61380B; /* Cor para combinar com o formulário de login */
+}
+
+form .category {
+  display: flex;
+  width: 100%;
+  margin: 14px 0;
+  justify-content: space-evenly; /* Mudança para espaçamento uniforme */
+}
+
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px; /* Diminuição do espaço entre labels */
+}
+
+form .category label:last-child {
+  margin-right: 0; /* Remover margem à direita do último elemento */
+}
+
+form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 5px; /* Diminuição do espaço entre o ponto e o texto */
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .one,
+#dot-2:checked ~ .two,
+#dot-3:checked ~ .three {
+  background: #61380B; /* Cor para combinar com o formulário de login */
+  border-color: #61380B; /* Cor para combinar com o formulário de login */
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+form .button {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0;
+}
+
+form .button input {
+  width: 150px; /* Ajuste o tamanho do botão */
+  background-color: #61380B;
+  color: #fff;
+  font-weight: var(--font-semi-bold);
+  padding: 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: box-shadow .4s, transform 0.3s ease;
+}
+
+form .button input:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category {
+    width: 100%;
+  }
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media (max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar à esquerda em telas pequenas */
+  }
+}

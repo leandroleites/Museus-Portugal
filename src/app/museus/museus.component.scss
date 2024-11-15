@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.linha1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    
+}
+
+.linha2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.museum-card {
+    width: 400px; /* Ajusta a largura para caber 2 cartões por linha com o gap */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    transition: transform 0.3s ease; /* Para animação suave ao passar o rato */
+}
+
+.museum-card:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a caixa ao passar o rato */
+    transition: transform 0.3s ease; 
+}
+
+.museum-image {
+    width: 100%;
+    height: 200px;
+}
+
+.museum-info {
+    padding: 15px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.museum-title {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.museum-address {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    flex-grow: 1;
+}
+
+.ticket-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.ticket {
+    padding: 6px 12px;
+    background-color:#61380B;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: "Syne", sans-serif;
+}
+
+.ticket:hover {
+    background-color: #442707;
+}

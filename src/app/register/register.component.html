@@ -1,0 +1,59 @@
+<app-sub-header></app-sub-header>
+<body>
+  <div class="container">
+    <div class="title">Criar Conta</div>
+    <div class="content">
+      <form (ngSubmit)="onSubmitRegister()">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nome</span>
+            <input type="text" [(ngModel)]="name" name="name" placeholder="Insira o seu nome" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Apelido</span>
+            <input type="text" [(ngModel)]="surname" name="surname" placeholder="Insira o seu apelido" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Data de Nascimento</span>
+            <input type="date" [(ngModel)]="dob" name="dob" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" [(ngModel)]="email" name="email" placeholder="Insira o seu email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" [(ngModel)]="password" name="password" placeholder="Insira a sua password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirmar Password</span>
+            <input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Insira a sua password" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <span class="gender-title">Género</span>
+          <div class="category">
+            <label for="dot-1">
+              <input type="radio" [(ngModel)]="gender" name="gender" id="dot-1" value="Masculino">
+              <span class="dot one"></span>
+              <span class="gender">Masculino</span>
+            </label>
+            <label for="dot-2">
+              <input type="radio" [(ngModel)]="gender" name="gender" id="dot-2" value="Feminino">
+              <span class="dot two"></span>
+              <span class="gender">Feminino</span>
+            </label>
+            <label for="dot-3">
+              <input type="radio" [(ngModel)]="gender" name="gender" id="dot-3" value="Outro">
+              <span class="dot three"></span>
+              <span class="gender">Outro</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Registar">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

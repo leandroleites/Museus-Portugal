@@ -1,0 +1,38 @@
+  <div class="reviews-display">
+    <h2>Avaliações</h2>
+    <div *ngFor="let review of reviews" class="review-item">
+      <h3>{{ review.name }} ({{ review.value }}/5)</h3>
+      <p>{{ review.comment }}</p>
+    </div>
+  </div>
+<div class="review-section">
+    <h2>Deixe-nos a sua Opinião</h2>
+    <form (submit)="submitReview($event)">
+      <div class="input-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" [(ngModel)]="review.name" name="name" readonly style="background-color: #f0f0f0;">
+      </div>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="review.email" name="email" readonly style="background-color: #f0f0f0;">
+      </div>
+      <div class="input-group">
+        <label for="value">Classificação:</label>
+        <select id="value" [(ngModel)]="review.value" name="value" required>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="comment">Comentários:</label>
+        <textarea id="comment" [(ngModel)]="review.comment" name="comment" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-submit">Enviar Avaliação</button>
+    </form>
+  </div>
+  <br>
+  
