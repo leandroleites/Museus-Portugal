@@ -1,6 +1,28 @@
-# MuseusPT
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+
+
+
+# 🖼️ Museus Portugal
+
+Website informativo sobre museus em Portugal, feito com Angular. Explore a riqueza cultural do país, conhecendo os principais museus e suas atrações!
+
+## ✨ Funcionalidades
+
+- 🔍 **Busca rápida** por museus em várias cidades de Portugal.
+- 📍 **Informações detalhadas** sobre localização, horários e descrições.
+- 💡 Interface intuitiva para facilitar a navegação e busca de informações.
+- 💡 Sistema de login e avaliações sufisticado
+  
+## 🚀 Tecnologias
+
+- **Frontend:** Angular
+- **Backend:** Angular CLI
+
+![image](https://github.com/user-attachments/assets/7e0f30b2-9856-4f8f-a7c0-cd32994a9b1f)
+
+![image](https://github.com/user-attachments/assets/f2e71a0a-9fad-4ac7-81b1-b81bd3dee78c)
+
 
 ## Development server
 
